@@ -19,4 +19,5 @@ django react template.
 - UI
     - `antd` 企业级 UI 开发库
 - 样式
+    - `classnames` 样式管理
     - `styled-components` 样式组件库

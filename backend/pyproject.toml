@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["gooker_young <gooker_young@163.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.9"
+
+# web 依赖项
+django = "^4.2.1"
+django-import-export = "^3.1.0"
+djangorestframework = "^3.14.0"
+django-filter = "^23.2"
+django-cors-headers = "^3.14.0"
+django-jazzmin = "^2.6.0"
+drf-writable-nested = "^0.7.0"
+tornado = "^6.2"
+djangorestframework-simplejwt = "^5.2.2"
+celery = "^5.3.6"
+
+# 仿真工具
+pywin32 = "225"
+fmpy = "0.3.12"
+pygments = "^2.14.0"
+
+# 科学计算
+scipy = "^1.9.0"
+numpy = "^1.21"
+pandas = "^1.5.3"
+matplotlib = "^3.3.4"
+# tools
+lxml = "^5.1.0"
+pillow = "^8.2.0"
+black = "^24.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = 'tuna'
+url = 'https://pypi.tuna.tsinghua.edu.cn/simple/'
+priority = "default"
+
+[[tool.poetry.source]]
+name = 'aliyun'
+url = 'https://mirrors.aliyun.com/pypi/'
+priority = "supplemental"
